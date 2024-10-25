@@ -1,6 +1,7 @@
 package com.freightfox.dpg.mapper;
 
 import com.freightfox.dpg.dto.InvoiceRequest;
+import com.freightfox.dpg.dto.InvoiceResponse;
 import org.springframework.stereotype.Component;
 import org.thymeleaf.context.Context;
 
@@ -23,6 +24,15 @@ public class InvoiceMapper {
         data.put("items",invoiceRequest.getItems());
         context.setVariables(data);
         return context;
+    }
+
+    public InvoiceResponse mapToInvoiceResponse(String message, String filename, String filepath)
+    {
+        InvoiceResponse invoiceResponse = new InvoiceResponse();
+        invoiceResponse.setMessage(message);
+        invoiceResponse.setFilename(filename);
+        invoiceResponse.setFilepath(filepath);
+        return invoiceResponse;
     }
 
 }
