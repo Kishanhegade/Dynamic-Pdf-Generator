@@ -1,4 +1,4 @@
-# Invoice PDF Generation API
+# PDF Generation API
 
 ## Project Overview
 This Spring Boot API generates PDF invoices based on user-provided data and stores them in local storage. The API checks for existing PDFs to avoid redundant generation. This project is designed for backend use without UI, storing files in a specified directory on the local disk.
