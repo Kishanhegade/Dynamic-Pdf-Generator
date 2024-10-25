@@ -1,4 +1,4 @@
-package com.dpg;
+package com.freightfox.dpg;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

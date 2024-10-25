@@ -1,4 +1,4 @@
-package com.dpg;
+package com.freightfox.dpg;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
